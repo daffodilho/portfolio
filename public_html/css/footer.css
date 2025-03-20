@@ -1,0 +1,100 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background: linear-gradient(30deg, #989DB9, #8DA694);
+  position: relative;
+  width: 100%;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.5rem;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/grunge-texture.png");
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  background-repeat: repeat;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 1;
+}
+
+footer h2 {
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  color: #151515;
+  margin-bottom: 0.25rem;
+}
+
+footer a {
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #151515;
+  text-decoration: none;
+}
+
+footer p {
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #151515;
+}
+
+footer ul {
+  list-style: none;
+}
+
+@media screen and (min-width: 40rem) {
+  footer {
+    padding: 2.25rem 2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+  }
+  #copyright {
+    margin-right: 2.5rem;
+  }
+}
+@media screen and (min-width: 64rem) {
+  footer {
+    padding: 2.5rem;
+  }
+  footer ul {
+    gap: 1.5rem;
+  }
+}

@@ -1,52 +1,31 @@
-header {
-  margin: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  gap: 1rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#logo, nav a {
-  text-decoration: none;
-  font-family: "Schibsted Grotesk", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  text-transform: uppercase;
-  font-size: 1rem;
-  color: #151515;
-}
-
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1rem;
-}
-
-@media screen and (min-width: 40rem) {
-  header {
-    margin: 2rem;
-  }
-}
-@media screen and (min-width: 64rem) {
-  header {
-    margin: 2.5rem;
-  }
-}
 #banner {
-  margin: 1.5rem;
+  height: 90vh;
 }
 
 h1 {
   font-family: "Libre Caslon Text", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
+}
+
+.block-display {
+  display: block;
+}
+
+.italic {
+  font-style: italic;
+}
+
+#projects {
+  background-color: #151515;
+}
+
+#projects h2 {
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #F5F5F5;
+  padding: 1.5rem;
 }
