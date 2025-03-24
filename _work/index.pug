@@ -4,16 +4,14 @@ html(lang="en")
     head 
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
-        title Daffodil Ho
+        title Daffodil Ho's Portfolio
 
         link(rel="preconnect" href="https://fonts.googleapis.com")
         link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
         link(href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet")
 
         link(rel="stylesheet", href="css/normalize.css")
-        link(rel="stylesheet", href="css/colors.css")
         link(rel="stylesheet", href="css/header.css")
-        link(rel="stylesheet", href="css/footer.css")
         link(rel="stylesheet", href="css/index.css")
 
     body
@@ -21,16 +19,31 @@ html(lang="en")
 
         section#banner
             h1 
-                span.block-display Graphic
-                span.block-display.italic Designer &
-                span.block-display Visual
-                span.block-display Storyteller
-            p Currently based in Surrey, BC
+                span.block-display Graphic Designer
+                span.block-display.italic & Visual Storyteller
 
         section#projects
-            h2 The Projects that Made It
-            a(href="p1-biennale.html")
-                img(src="#", alt="View Biennale Architettura Project")
-            p Biennale Architettura ..... Visual identity design for an architecture exhibition with the theme How Will We Live Together?
-
-        include inc/_footer.pug
+            div.project-wrapper
+                img.bullet(src="../img/bullet.png", alt="square bullet icon")
+                h2 Biennale Architettura
+                p Visual identity design for an architecture exhibition
+                a(href="biennale-project.html")
+                    img.project-cover(src="../img/biennale-project-cover.webp", alt="View Biennale Architettura Project")
+            
+            div.project-wrapper
+                img.bullet(src="../img/bullet.png", alt="square bullet icon")
+                h2 Kinetic Typography
+                p Animated lyrics for 
+                    span.italic I'm So Happy 
+                    span by Jeremy Zucker
+                a(href="kinetic-project.html")
+                    img.project-cover(src="../img/kinetic-project-cover.webp", alt="View Kinetic Typography Project")
+            
+            div.project-wrapper
+                img.bullet(src="../img/bullet.png", alt="square bullet icon")
+                h2 Kinetic Typography
+                p Animated lyrics for 
+                    span.italic I'm So Happy 
+                    span by Jeremy Zucker
+                a(href="kinetic-project.html")
+                    img.project-cover(src="../img/kinetic-project-cover.webp", alt="View Kinetic Typography Project")

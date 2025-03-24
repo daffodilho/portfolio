@@ -1,0 +1,163 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+#project-wrapper {
+  margin: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+h1 {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  color: #726AFF;
+}
+
+#project-overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 1rem;
+  border-bottom: 1px solid #726AFF;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+  color: #726AFF;
+  margin-bottom: 0.5rem;
+}
+
+p, .list-wrapper ul li {
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #151515;
+  margin-bottom: 0.5rem;
+  line-height: 1.5rem;
+}
+
+#project-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.caption {
+  font-size: 0.75rem;
+}
+
+#asset2 {
+  width: 50%;
+}
+
+#color-wrapper, #poster-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.color {
+  -ms-flex-preferred-size: 5%;
+      flex-basis: 5%;
+  height: 8rem;
+}
+
+#biennale-primary {
+  background-color: #E03C00;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+#biennale-secondary {
+  background-color: #332C29;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#biennale-white {
+  background-color: #D9D9D9;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#biennale-black {
+  background-color: #2F2F2F;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.list-wrapper ul {
+  list-style: none;
+}
+
+.poster {
+  width: 30%;
+}
+
+@media screen and (min-width: 48rem) {
+  #project-wrapper {
+    margin: 6rem;
+  }
+}
+@media screen and (min-width: 64rem) {
+  #project-wrapper {
+    margin: 8rem 15rem;
+  }
+  h1 {
+    text-align: center;
+  }
+  #project-overview {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 3rem;
+  }
+  #project-overview div {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+}

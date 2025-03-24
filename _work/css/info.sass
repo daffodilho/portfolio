@@ -1,0 +1,115 @@
+// info page
+@import "colors"
+
+*
+    box-sizing: border-box
+    margin: 0
+
+#info-wrapper
+    display: flex
+    flex-flow: column nowrap
+    margin: 0 1rem 2rem
+
+#profile
+    display: flex
+    flex-flow: column nowrap
+    align-items: flex-end
+
+#profile img
+    width: 40%
+    object-fit: contain
+    filter: grayscale(100%)
+    transition: 300ms ease-in-out
+
+#profile img:hover
+    filter: grayscale(0)
+
+#note
+    font-family: "Schibsted Grotesk", sans-serif
+    font-weight: 400
+    font-style: normal
+    font-size: 0.6rem
+    color: $main
+    margin-top: 0.5rem
+
+#about
+    margin-top: 6rem
+
+#about h1
+    font-family: "Libre Caslon Text", serif
+    font-weight: 400
+    font-style: italic
+    font-size: 1.25rem
+    color: $main
+    margin: 0
+
+#about p
+    font-family: "Schibsted Grotesk", sans-serif
+    font-weight: 400
+    font-style: normal
+    font-size: 1rem
+    line-height: 1.5rem
+    color: $dark
+    margin-top: 1rem
+
+#about h2, #resume
+    font-family: "Schibsted Grotesk", sans-serif
+    font-weight: 400
+    font-style: normal
+    font-size: 1rem
+    line-height: 1.5rem
+    color: $main
+    margin-top: 4rem
+
+#about ul
+    list-style: none
+    padding: 0
+    display: flex
+    flex-flow: row wrap
+    margin-top: 1rem
+
+#about ul li
+    font-family: "Schibsted Grotesk", sans-serif
+    font-weight: 400
+    font-style: normal
+    font-size: 1rem
+    line-height: 1.5rem
+    color: $dark
+    width: 50%
+
+@media screen and (min-width: 48rem)
+    #info-wrapper
+        flex-flow: row nowrap
+        justify-content: space-between
+        margin: 6rem
+    
+    #profile
+        align-items: flex-start
+        flex-basis: 50%
+        flex-grow: 1
+    
+    #profile img
+        width: 50%
+
+    #note
+        font-size: 0.7rem
+    
+    #about
+        flex-basis: 50%
+        flex-grow: 1
+        margin-top: 0
+    
+    #about h1
+        font-size: 1.5rem
+
+@media screen and (min-width: 64rem)
+    #info-wrapper
+        margin: 8rem 15rem
+
+    #profile
+        flex-basis: 25%
+
+    #about h1
+        font-size: 1.75rem
+    
+    

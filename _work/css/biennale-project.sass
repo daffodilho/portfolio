@@ -1,0 +1,116 @@
+// Biennale Architettura Project Page
+@import "colors"
+
+*
+    box-sizing: border-box
+    margin: 0
+
+body
+    background-color: $light
+
+#project-wrapper
+    margin: 0 1rem
+    display: flex
+    flex-flow: column nowrap
+
+h1
+    font-family: "Libre Caslon Text", serif
+    font-weight: 400
+    font-style: normal
+    font-size: 3rem
+    color: $main
+
+#project-overview
+    display: flex
+    flex-flow: column nowrap
+    gap: 1rem
+    border-bottom: 1px solid $main
+    padding-bottom: 2rem
+
+h2
+    font-family: "Schibsted Grotesk", sans-serif
+    font-weight: 600
+    font-style: normal
+    font-size: 1rem
+    color: $main
+    margin-bottom: 0.5rem
+
+p, .list-wrapper ul li
+    font-family: "Schibsted Grotesk", sans-serif
+    font-weight: 400
+    font-style: normal
+    font-size: 1rem
+    color: $dark
+    margin-bottom: 0.5rem
+    line-height: 1.5rem
+
+#project-details
+    display: flex
+    flex-flow: column nowrap
+    gap: 1rem
+    margin-top: 2rem
+
+.caption
+    font-size: 0.75rem
+
+#asset2
+    width: 50%
+
+#color-wrapper, #poster-wrapper
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+
+.color
+    flex-basis: 5%
+    height: 8rem
+
+#biennale-primary
+    background-color: #E03C00
+    flex-grow: 2
+
+#biennale-secondary
+    background-color: #332C29
+    flex-grow: 1
+
+#biennale-white
+    background-color: #D9D9D9
+    flex-grow: 1
+
+#biennale-black
+    background-color: #2F2F2F
+    flex-grow: 1
+
+.list-wrapper ul
+    list-style: none
+
+.poster
+    width: 30%
+
+
+
+
+
+
+@media screen and (min-width: 48rem)
+    #project-wrapper
+        margin: 6rem
+
+@media screen and (min-width: 64rem)
+    #project-wrapper
+        margin: 8rem 15rem
+    
+    h1
+        text-align: center
+    
+    #project-overview
+        flex-flow: row nowrap
+        justify-content: center
+        margin-top: 3rem
+    
+    #project-overview div
+        flex-basis: 25%
+    
+    
+
+

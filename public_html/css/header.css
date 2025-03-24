@@ -1,5 +1,4 @@
 header {
-  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,36 +9,49 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: red;
+  padding: 1.5rem 1rem;
 }
 
-#logo, nav a {
+#logo, #nav-list nav a, #nav-resume a {
   text-decoration: none;
   font-family: "Schibsted Grotesk", sans-serif;
   font-weight: 500;
   font-style: normal;
   text-transform: uppercase;
-  font-size: 1rem;
-  color: #151515;
+  font-size: 0.75rem;
+  color: #726AFF;
 }
 
-nav {
+#nav-list nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
 }
 
+#nav-resume {
+  display: none;
+}
+
 @media screen and (min-width: 40rem) {
-  nav {
-    gap: 1.5rem;
+  header {
+    padding: 1.5rem;
+  }
+  #logo, #nav-list nav a, #nav-resume a {
+    font-size: 0.9rem;
+  }
+  #nav-resume {
+    display: block;
   }
 }
 @media screen and (min-width: 64rem) {
-  #logo, nav a {
-    font-size: 1.25rem;
+  header {
+    padding: 2rem;
   }
-  nav {
+  #logo, #nav-list nav a, #nav-resume a {
+    font-size: 1rem;
+  }
+  #nav-list nav {
     gap: 2rem;
   }
 }

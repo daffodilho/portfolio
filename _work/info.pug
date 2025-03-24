@@ -1,0 +1,47 @@
+doctype html
+html(lang="en")
+
+    head 
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Daffodil Ho's Portfolio
+
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet")
+
+        link(rel="stylesheet", href="css/normalize.css")
+        link(rel="stylesheet", href="css/header.css")
+        link(rel="stylesheet", href="css/info.css")
+
+    body
+        include inc/_header.pug
+
+        div#info-wrapper
+            section#profile 
+                img(src="../img/profile.jpg", alt="Picture of Daffodil")
+                p#note INFP &#x264C&#9996
+        
+            section#about
+                h1 Hello, Nice To Meet You.
+                p I'm an aspiring graphic designer and a third-year student at SFU's School of Interactive Arts & Technology. Currently, I'm pursuing a BSc with concentrations in designing interactions and design & development for web & mobile.
+                p My experience is rooted in visual identity and marketing design, but I've had the opportunity to work on a diverse range of creative projects. These include responsive web design and development, software development, motion design, sound design, game art, photography, and videography. I'm passionate about creating visually compelling experiences that blend creativity with functionality.
+
+                h2 Tools 
+                ul 
+                    li Figma 
+                    li HTML with Pug
+                    li Illustrator 
+                    li CSS with Sass
+                    li Photoshop 
+                    li JavaScript 
+                    li InDesign 
+                    li Reaper 
+                    li After Effects 
+                    li Arduino 
+                    li Premiere Pro
+                    li Processing
+                    li Canva 
+
+                h2 
+                    a#resume(href="../resume.pdf") Download Resume

@@ -1,12 +1,19 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
 #banner {
-  height: 90vh;
+  margin: 0 1rem;
 }
 
 h1 {
   font-family: "Libre Caslon Text", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2.75rem;
+  font-size: 3rem;
+  color: #726AFF;
 }
 
 .block-display {
@@ -18,14 +25,88 @@ h1 {
 }
 
 #projects {
-  background-color: #151515;
+  padding: 3rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 3rem;
 }
 
-#projects h2 {
+.bullet {
+  width: 0.6rem;
+}
+
+.project-wrapper h2 {
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+  color: #726AFF;
+  display: inline-block;
+}
+
+.project-wrapper p {
   font-family: "Schibsted Grotesk", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
-  color: #F5F5F5;
-  padding: 1.5rem;
+  color: #726AFF;
+}
+
+.project-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 14rem;
+  margin-top: 0.5rem;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.project-cover:hover, .project-cover:focus {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+@media screen and (min-width: 26rem) {
+  h1 {
+    font-size: 3.25rem;
+  }
+}
+@media screen and (min-width: 40rem) {
+  #banner {
+    margin: 0 1.5rem;
+  }
+}
+@media screen and (min-width: 64rem) {
+  h1 {
+    font-size: 3.75rem;
+  }
+  #banner {
+    margin: 0 2rem;
+  }
+  #projects {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    position: absolute;
+    bottom: 2rem;
+    padding: 0 2rem;
+    width: 100%;
+    gap: 2rem;
+  }
+  .project-wrapper {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
+  .project-cover {
+    height: 14rem;
+  }
 }

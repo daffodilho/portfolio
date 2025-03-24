@@ -3,44 +3,38 @@
   <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daffodil Ho</title>
+    <title>Daffodil Ho's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
-    <header><a id="logo" href="index.html">Daffodil Ho</a>
-      <nav><a href="about.html">About</a><a href="../resume.pdf">Resume </a></nav>
+    <header>
+      <div id="nav-brand"><a id="logo" href="index.html">Daffodil Ho</a></div>
+      <div id="nav-list">
+        <nav><a href="info.html">Info</a><a href="contact.html">Contact</a></nav>
+      </div>
+      <div id="nav-resume"><a href="../resume.pdf">Resume</a></div>
     </header>
     <section id="banner">
-      <h1> <span class="block-display">Graphic</span><span class="block-display italic">Designer &</span><span class="block-display">Visual</span><span class="block-display">Storyteller</span></h1>
-      <p>Currently based in Surrey, BC</p>
+      <h1> <span class="block-display">Graphic Designer</span><span class="block-display italic">& Visual Storyteller</span></h1>
     </section>
     <section id="projects">
-      <h2>The Projects that Made It</h2><a href="p1-biennale.html"><img src="#" alt="View Biennale Architettura Project"></a>
-      <p>Biennale Architettura ..... Visual identity design for an architecture exhibition with the theme How Will We Live Together?</p>
+      <div class="project-wrapper"><img class="bullet" src="../img/bullet.png" alt="square bullet icon">
+        <h2>Biennale Architettura</h2>
+        <p>Visual identity design for an architecture exhibition</p><a href="biennale-project.html"><img class="project-cover" src="../img/biennale-project-cover.webp" alt="View Biennale Architettura Project"></a>
+      </div>
+      <div class="project-wrapper"><img class="bullet" src="../img/bullet.png" alt="square bullet icon">
+        <h2>Kinetic Typography</h2>
+        <p>Animated lyrics for <span class="italic">I'm So Happy </span><span>by Jeremy Zucker</span></p><a href="kinetic-project.html"><img class="project-cover" src="../img/kinetic-project-cover.webp" alt="View Kinetic Typography Project"></a>
+      </div>
+      <div class="project-wrapper"><img class="bullet" src="../img/bullet.png" alt="square bullet icon">
+        <h2>Kinetic Typography</h2>
+        <p>Animated lyrics for <span class="italic">I'm So Happy </span><span>by Jeremy Zucker</span></p><a href="kinetic-project.html"><img class="project-cover" src="../img/kinetic-project-cover.webp" alt="View Kinetic Typography Project"></a>
+      </div>
     </section>
-    <footer>
-      <div> 
-        <h2>Send me an email </h2><a href="#"> dlh12@sfu.ca</a>
-      </div>
-      <div> 
-        <h2>Connect</h2>
-        <ul> 
-          <li> <a href="#">LinkedIn </a></li>
-          <li> <a href="#">GitHub</a></li>
-          <li> <a href="#">Behance  </a></li>
-        </ul>
-      </div>
-      <div id="copyright"> 
-        <h2>Design & Code By</h2>
-        <p>&copy 2025 Daffodil Ho</p>
-      </div>
-    </footer>
   </body>
 </html>
