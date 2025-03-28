@@ -1,15 +1,9 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-}
-
 body {
   background-color: #F5F5F5;
 }
 
 #project-wrapper {
-  margin: 0 1rem;
+  margin: 0 1rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,6 +19,7 @@ h1 {
   font-style: normal;
   font-size: 3rem;
   color: #726AFF;
+  margin: 2rem 0;
 }
 
 #project-overview {
@@ -35,28 +30,28 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  gap: 1rem;
+  gap: 0.5rem;
   border-bottom: 1px solid #726AFF;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 h2 {
   font-family: "Schibsted Grotesk", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #726AFF;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0 0.25rem;
 }
 
-p, .list-wrapper ul li {
+p {
   font-family: "Schibsted Grotesk", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
   color: #151515;
-  margin-bottom: 0.5rem;
   line-height: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 #project-details {
@@ -67,12 +62,24 @@ p, .list-wrapper ul li {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  gap: 1rem;
-  margin-top: 2rem;
+  gap: 4rem;
+  margin-top: 1.5rem;
+}
+
+#project-objective, #art-direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
 }
 
 .caption {
   font-size: 0.75rem;
+  margin-top: 0.25rem;
+  line-height: 1rem;
 }
 
 #asset2 {
@@ -93,8 +100,8 @@ p, .list-wrapper ul li {
 }
 
 .color {
-  -ms-flex-preferred-size: 5%;
-      flex-basis: 5%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
   height: 8rem;
 }
 
@@ -126,17 +133,177 @@ p, .list-wrapper ul li {
           flex-grow: 1;
 }
 
-.list-wrapper ul {
-  list-style: none;
+h3 {
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+  color: #151515;
+  margin: 3rem 0 0.5rem;
+  line-height: 1.5rem;
+}
+
+.concept-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.concept-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+  text-align: right;
+  -webkit-filter: drop-shadow(0 0.1rem 0.1rem rgb(195, 195, 195));
+          filter: drop-shadow(0 0.1rem 0.1rem rgb(195, 195, 195));
+}
+
+.concept-item img {
+  height: 10rem;
+  width: auto;
+}
+
+.concept-item p {
+  width: 50%;
+}
+
+#img-grouping {
+  width: 100%;
+}
+
+#poster-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.poster-item {
+  width: 32%;
 }
 
 .poster {
-  width: 30%;
+  width: 100%;
+}
+
+#poster-iterations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+}
+
+#poster-iterations img {
+  width: 18%;
+}
+
+#asset-translation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#asset-translation img {
+  width: 47%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.full-width {
+  width: 100%;
+}
+
+#other-projects {
+  text-align: right;
+}
+
+#other-projects a {
+  color: #726AFF;
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+}
+
+#other-projects a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.1rem;
+  background-color: #726AFF;
+  bottom: -0.5rem;
+  left: 0;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+#other-projects a:hover::before {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 @media screen and (min-width: 48rem) {
   #project-wrapper {
     margin: 6rem;
+  }
+  .concept-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    gap: 1rem;
+  }
+  .concept-item {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  #asset-translation img {
+    width: 48%;
   }
 }
 @media screen and (min-width: 64rem) {
@@ -145,6 +312,22 @@ p, .list-wrapper ul li {
   }
   h1 {
     text-align: center;
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  p {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+  }
+  .caption {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
   }
   #project-overview {
     -webkit-box-orient: horizontal;
@@ -154,10 +337,17 @@ p, .list-wrapper ul li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 3rem;
+    gap: 1rem;
+    margin-top: 2rem;
   }
   #project-overview div {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
+  }
+  #img-grouping {
+    width: 48%;
+  }
+  .concept-item p {
+    width: 49%;
   }
 }

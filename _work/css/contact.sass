@@ -1,0 +1,56 @@
+// Contact Page
+@import "colors"
+
+body
+    background-color: $dark
+
+#container
+    display: flex
+    flex-flow: column nowrap
+    width: 90%
+    margin: auto
+
+h1
+    font-family: "Libre Caslon Text", serif
+    font-weight: 400
+    font-style: italic
+    font-size: 3rem
+    color: $main
+
+#contact-links
+    display: flex
+    flex-flow: column nowrap
+    border-bottom: 1px dotted rgb(42, 42, 42)
+
+    .link a
+        display: flex
+        flex-flow: row nowrap
+        justify-content: space-between
+        text-decoration: none
+        border-top: 1px dotted rgb(42, 42, 42)
+        padding: 1.2rem 0
+        transition: all 300ms ease-in-out
+    
+        p
+            font-family: "Schibsted Grotesk", sans-serif
+            font-weight: 600
+            font-style: normal
+            font-size: 1rem
+            color: $main
+            
+    
+    .link a:hover
+        padding-left: 1.5rem
+       
+@media screen and (min-width: 48rem)
+    #container
+        width: 50%
+        margin-top: 8rem
+
+@media screen and (min-width: 64rem)
+    #container
+        width: 40%
+    
+    h1
+        text-align: center
+    
