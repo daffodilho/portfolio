@@ -1,4 +1,4 @@
-// Biennale Architettura Project Page
+// Kinetic Typography Project Page
 @import "colors"
 
 body
@@ -51,34 +51,41 @@ p
     display: flex
     flex-flow: column nowrap
 
+.italic
+    font-style: italic
+
 .caption
     font-size: 0.75rem
     margin-top: 0.25rem
     line-height: 1rem
 
-#asset2
-    width: 50%
-
-#color-wrapper, #poster-wrapper
+#color-wrapper
     display: flex
     flex-flow: row wrap
     justify-content: space-between
 
 .color
-    flex-basis: 25%
+    flex-basis: 33%
     height: 8rem
+    flex-grow: 1
 
-#biennale-primary
-    background-color: #E03C00
+#kinetic-yellow
+    background-color: #FEB101
 
-#biennale-secondary
-    background-color: #332C29
+#kinetic-red
+    background-color: #ED6560
 
-#biennale-white
-    background-color: #D9D9D9
+#kinetic-blue
+    background-color: #72C5CD
 
-#biennale-black
-    background-color: #2F2F2F
+#kinetic-green
+    background-color: #33B792
+
+#kinetic-ivory 
+    background-color: #FCEDDF
+
+#kinetic-black
+    background-color: #151515
 
 h3
     font-family: "Schibsted Grotesk", sans-serif
@@ -89,68 +96,25 @@ h3
     margin: 3rem 0 0.5rem
     line-height: 1.5rem
 
-.concept-wrapper
-    display: flex
-    flex-flow: column nowrap
-    gap: 1rem
-    margin-bottom: 2rem
-
-.concept-item
-    display: flex
-    flex-flow: row nowrap
-    padding: 1rem
-    background-color: #FFFFFF
-    align-items: flex-start
-    justify-content: space-between
-    gap: 1rem
-    text-align: right
-    filter: drop-shadow(0 0.1rem 0.1rem rgb(195, 195, 195))
-
-.concept-item img
-    height: 10rem
-    width: auto
-
-.concept-item p
-    width: 50%
-
-#img-grouping
-    width: 100%
-
-#poster-wrapper
-    display: flex
-    flex-flow: row wrap
-
-.poster-item
-    width: 32%
-
-.poster
-    width: 100%
-
-#poster-iterations
-    display: flex
-    flex-flow: row wrap
-    justify-content: space-between
-    margin-top: 2rem
-
-#poster-iterations img
-    width: 18%
-
-#asset-translation
-    display: flex
-    flex-flow: row wrap
-    gap: 1rem
-    justify-content: space-between
-
-#asset-translation img
-    width: 47%
-    height: auto
-    object-fit: cover
-
 .full-width
     width: 100%
 
+.half
+    width: 49%
+
+.third
+    width: 33%
+
+.img-wrapper
+    width: 100%
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+
 #other-projects
-    text-align: right
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
 
 #other-projects a
     color: $main
@@ -178,16 +142,6 @@ h3
     #project-wrapper
         margin: 6rem
 
-    .concept-wrapper
-        flex-flow: row wrap
-        gap: 1rem
-    
-    .concept-item
-        flex-basis: 48%
-
-    #asset-translation img
-        width: 48%
-    
 @media screen and (min-width: 64rem)
     #project-wrapper
         margin: 8rem 15rem
@@ -220,8 +174,5 @@ h3
     #project-overview div
         flex-basis: 25%
     
-    #img-grouping
-        width: 48%
-    
-    .concept-item p
-        width: 49%
+    .color
+        flex-basis: 16%
