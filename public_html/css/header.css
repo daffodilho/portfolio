@@ -26,6 +26,7 @@ header {
   text-transform: uppercase;
   font-size: 0.9rem;
   color: #726AFF;
+  cursor: url("../../img/pointer.png"), pointer;
 }
 
 #nav-list nav {

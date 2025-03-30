@@ -1,9 +1,10 @@
 body {
   background-color: #F5F5F5;
+  cursor: url("../../img/cursor.png"), auto;
 }
 
 #project-wrapper {
-  margin: 0 1rem 2rem;
+  margin: 0 1rem 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,14 +182,32 @@ h3 {
           justify-content: space-between;
 }
 
-#other-projects a {
+.project-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.5rem;
+}
+
+.project-link h3, .project-link a {
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
   color: #726AFF;
   text-decoration: none;
   position: relative;
   text-transform: uppercase;
+  margin: 0;
+  line-height: 1;
+  cursor: url("../../img/pointer.png"), pointer;
 }
 
-#other-projects a::before {
+.project-link a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -206,21 +225,25 @@ h3 {
   transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
-#other-projects a:hover::before {
+.project-link a:hover::before {
   -webkit-transform-origin: left;
           transform-origin: left;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
+.align-right {
+  text-align: right;
+}
+
 @media screen and (min-width: 48rem) {
   #project-wrapper {
-    margin: 6rem;
+    margin: 1.5rem 6rem 6rem;
   }
 }
 @media screen and (min-width: 64rem) {
   #project-wrapper {
-    margin: 8rem 15rem;
+    margin: 1.5rem 15rem 6rem;
   }
   h1 {
     text-align: center;
@@ -246,15 +269,11 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 1rem;
     margin-top: 2rem;
-  }
-  #project-overview div {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
   }
   .color {
     -ms-flex-preferred-size: 16%;

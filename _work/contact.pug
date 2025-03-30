@@ -16,24 +16,42 @@ html(lang="en")
     body
         include inc/_header.pug
 
-        div#container
-            h1 Get In Touch.
+        div#wrapper
+            h1
+                span.block-display Feel Free To 
+                span.block-display.italic Reach Out.
 
-            div#contact-links
-                div.link 
-                    a(href="#") 
-                        p Email dlh12@sfu.ca
-                        p &#x2197
-                        
-                div.link 
-                    a(href="#") 
-                        p Connect on LinkedIn
-                        p &#x2197
+            div#contact-wrapper
+                div#contact-links 
+                    div.link
+                        img.bullet(src="../img/email-icon.png", alt="square bullet icon")
+                        div.hoverline
+                            a(href="#") dlh12@sfu.ca
+                            
+                    div.link
+                        img.bullet(src="../img/linkedin-icon.png", alt="square bullet icon")
+                        div.hoverline
+                            a(href="#") LinkedIn
+                    
+                    div.link
+                        img.bullet(src="../img/instagram-icon.png", alt="square bullet icon")
+                        div.hoverline
+                            a(href="#") Instagram
+                    
+                    div.link
+                        img.bullet(src="../img/resume-icon.png", alt="square bullet icon")
+                        div.hoverline
+                            a(href="#") Download Resume
+                
+                p Graphic Designer based in Vancouver, Canada. Currently open to freelance work.
 
-                div.link 
-                    a(href="#") 
-                        p Connect on Instagram 
-                        p &#x2197
+            div#image-wrapper 
+                img(src="../img/reach-out.webp", alt="")
+                //- Photo by Sebastian Dumitru on Unsplash
+                
+                
+            
+                 
             
             
             
