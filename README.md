@@ -9,6 +9,7 @@
 5. [Cloud Convert - Image Optimization](https://cloudconvert.com/png-to-webp)
 6. [Free Convert - Image Optimization](https://www.freeconvert.com/png-to-webp)
 7. [Vimeo - Video Hosting](https://vimeo.com/)
+8. [Favicon Generator](https://favicon.io/favicon-generator/)
 
 ### Tools
 - HTML (Pug)
