@@ -5,6 +5,7 @@
 }
 
 body {
+  background-color: #F5F5F5;
   cursor: url("../../img/cursor.png"), auto;
 }
 
@@ -49,7 +50,7 @@ h1 {
   font-family: "Schibsted Grotesk", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #726AFF;
   display: inline-block;
 }
@@ -58,7 +59,7 @@ h1 {
   font-family: "Schibsted Grotesk", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #726AFF;
 }
 
@@ -88,6 +89,9 @@ h1 {
 @media screen and (min-width: 40rem) {
   #banner {
     margin: 0 1.5rem;
+  }
+  .project-wrapper h2, .project-wrapper p {
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 64rem) {

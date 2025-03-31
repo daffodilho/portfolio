@@ -40,7 +40,7 @@ h2 {
   font-family: "Schibsted Grotesk", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #726AFF;
   margin: 0.5rem 0 0.25rem;
 }
@@ -49,9 +49,9 @@ p {
   font-family: "Schibsted Grotesk", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #151515;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
   margin-bottom: 1rem;
 }
 
@@ -78,13 +78,14 @@ p {
 }
 
 .caption {
-  font-size: 0.75rem;
-  margin-top: 0.25rem;
+  font-size: 0.7rem;
+  margin: 0.25rem 0 1rem;
   line-height: 1rem;
 }
 
-#asset2 {
+.half-width {
   width: 50%;
+  height: auto;
 }
 
 #color-wrapper, #poster-wrapper {
@@ -126,10 +127,10 @@ h3 {
   font-family: "Schibsted Grotesk", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #151515;
   margin: 3rem 0 0.5rem;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
 }
 
 .concept-wrapper {
@@ -177,6 +178,7 @@ h3 {
 
 #img-grouping {
   width: 100%;
+  height: auto;
 }
 
 #poster-wrapper {
@@ -195,6 +197,7 @@ h3 {
 
 .poster {
   width: 100%;
+  height: auto;
 }
 
 #poster-iterations {
@@ -213,6 +216,7 @@ h3 {
 
 #poster-iterations img {
   width: 18%;
+  height: auto;
 }
 
 #asset-translation {
@@ -238,6 +242,7 @@ h3 {
 
 .full-width {
   width: 100%;
+  height: auto;
 }
 
 #other-projects {
@@ -268,13 +273,13 @@ h3 {
   font-family: "Schibsted Grotesk", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #726AFF;
   text-decoration: none;
   position: relative;
   text-transform: uppercase;
   margin: 0;
-  line-height: 1;
+  line-height: 0.9rem;
   cursor: url("../../img/pointer.png"), pointer;
 }
 
@@ -311,6 +316,9 @@ h3 {
   #project-wrapper {
     margin: 1.5rem 6rem 6rem;
   }
+  h1 {
+    font-size: 3.25rem;
+  }
   .concept-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -332,22 +340,22 @@ h3 {
   }
   h1 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 3.75rem;
   }
   h2 {
     font-size: 1.3rem;
     margin: 0.5rem 0;
   }
   h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   p {
-    font-size: 1.1rem;
-    line-height: 1.7rem;
+    font-size: 1rem;
+    line-height: 1.75rem;
   }
   .caption {
     font-size: 0.9rem;
-    margin-top: 0.5rem;
+    margin: 0.5rem 0 2rem;
   }
   #project-overview {
     -webkit-box-orient: horizontal;
@@ -369,5 +377,9 @@ h3 {
   }
   .concept-item p {
     width: 49%;
+  }
+  .project-link h3, .project-link a {
+    font-size: 1rem;
+    line-height: 1rem;
   }
 }

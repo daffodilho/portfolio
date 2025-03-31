@@ -42,7 +42,7 @@ h2 {
   font-family: "Schibsted Grotesk", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #726AFF;
   margin: 0.5rem 0 0.25rem;
 }
@@ -51,9 +51,9 @@ p {
   font-family: "Schibsted Grotesk", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #151515;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
   margin-bottom: 1rem;
 }
 
@@ -112,10 +112,10 @@ h3 {
   font-family: "Schibsted Grotesk", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #151515;
   margin: 3rem 0 0.5rem;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
 }
 
 #other-projects {
@@ -146,13 +146,13 @@ h3 {
   font-family: "Schibsted Grotesk", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #726AFF;
   text-decoration: none;
   position: relative;
   text-transform: uppercase;
   margin: 0;
-  line-height: 1;
+  line-height: 0.9rem;
   cursor: url("../../img/pointer.png"), pointer;
 }
 
@@ -192,6 +192,9 @@ h3 {
   #challenge-wrapper img {
     width: 31%;
   }
+  h1 {
+    font-size: 3.25rem;
+  }
 }
 @media screen and (min-width: 64rem) {
   #project-wrapper {
@@ -199,18 +202,18 @@ h3 {
   }
   h1 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 3.75rem;
   }
   h2 {
     font-size: 1.3rem;
     margin: 0.5rem 0;
   }
   h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   p {
-    font-size: 1.1rem;
-    line-height: 1.7rem;
+    font-size: 1rem;
+    line-height: 1.75rem;
   }
   #project-overview {
     -webkit-box-orient: horizontal;
@@ -222,5 +225,9 @@ h3 {
             justify-content: space-between;
     gap: 1rem;
     margin-top: 2rem;
+  }
+  .project-link h3, .project-link a {
+    font-size: 1rem;
+    line-height: 1rem;
   }
 }
