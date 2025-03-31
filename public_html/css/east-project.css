@@ -91,6 +91,7 @@ p {
 }
 #brandbook-wrapper img {
   width: 100%;
+  height: auto;
 }
 
 #challenge-wrapper {
@@ -106,6 +107,7 @@ p {
 }
 #challenge-wrapper img {
   width: 47%;
+  height: auto;
 }
 
 h3 {
