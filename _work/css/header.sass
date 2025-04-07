@@ -22,7 +22,9 @@ header
     cursor: url("../../img/pointer.png"), pointer
     position: relative
 
-#logo::before, #nav-list nav a::before, #nav-resume a::before
+#logo::before,
+#nav-list nav a::before, 
+#nav-resume a::before
     content: ''
     position: absolute
     width: 100%
@@ -34,9 +36,16 @@ header
     transform: scaleX(0)
     transition: transform 300ms ease-in-out
 
-#logo:hover::before, #nav-list nav a:hover::before, #nav-resume a:hover::before
+#logo:hover::before, #logo:focus::before, 
+#nav-list nav a:hover::before, #nav-list nav a:focus::before, 
+#nav-resume a:hover::before, #nav-resume a:focus::before
     transform-origin: left
     transform: scaleX(1)
+
+#logo:focus,
+#nav-list nav a:focus,
+#nav-resume a:focus
+    outline: 0.1rem dotted $main
 
 #nav-list nav
     display: flex

@@ -76,9 +76,12 @@ h1
             transform: scaleX(0)
             transition: transform 300ms ease-in-out
 
-        a:hover::before
+        a:hover::before, a:focus::before
             transform-origin: left
             transform: scaleX(1)
+
+        a:focus
+            outline: 0.1rem dotted $main
 
 p
     width: 70%

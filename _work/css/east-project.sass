@@ -116,9 +116,12 @@ h3
     transform: scaleX(0)
     transition: transform 300ms ease-in-out
 
-.project-link a:hover::before
+.project-link a:hover::before, .project-link a:focus::before
     transform-origin: left
     transform: scaleX(1)
+
+.project-link a:focus
+    outline: 0.1rem dotted $main
 
 .align-right
     text-align: right
